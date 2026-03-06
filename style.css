@@ -56,51 +56,39 @@ font-weight:500;
 nav a:hover{
 color:#d4af37;
 }
-/* MOBILE RESPONSIVE */
-
 @media (max-width:768px){
-
 header{
 flex-direction:column;
 gap:15px;
 padding:20px;
 }
-
 nav{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 }
-
 nav a{
 margin:8px 10px;
 }
-
 .hero h1{
 font-size:32px;
 }
-
 .hero-card{
 padding:30px;
 }
-
 section{
 padding:60px 25px;
 }
-
 .skills{
 grid-template-columns:1fr;
 }
-
 .projects{
 grid-template-columns:1fr;
 }
-
 .hero{
 height:auto;
 padding:100px 20px;
 }
-
 }
 .hero{
 height:90vh;
