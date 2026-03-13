@@ -10,7 +10,7 @@
 </head>
 <body>
 <header class="glass">
-<h2 class="logo">PortFolio</h2>
+<h2 class="logo">Armaan.Dev</h2>
 <nav>
 <a href="#">🏠 Home</a>
 <a href="#about">👨‍💻 About</a>
@@ -30,6 +30,9 @@ B.Tech Student in <b>AI & Data Science</b>.
 Passionate about AI, Machine Learning, Data Science and Full Stack Development.
 </p>
 <button onclick="scrollToAbout()">Explore My Work</button>
+<a href="resume.pdf" target="_blank" class="resume-btn">
+   <i class="fa-solid fa-file"></i> View Resume
+</a>
 </div>
 </section>
 <section id="about">
@@ -51,16 +54,18 @@ innovative solutions that solve real-world problems and deliver impactful techno
 <section id="skills">
 <h2>⚡ Skills</h2>
 <div class="skills">
-<div class="glass skill">Python Programming</div>
-<div class="glass skill">C++</div>
-<div class="glass skill">JavaScript</div>
-<div class="glass skill">Full Stack Developer</div>
-<div class="glass skill">Frontend Developer</div>
-<div class="glass skill">AI & ML Engineer</div>
-<div class="glass skill">Data Analytics</div>
-<div class="glass skill">Data Structures and Algorithms</div>
-<div class="glass skill">Database Management</div>
+<div class="glass skill" onclick="showSkill('python')">Python Programming</div>
+<div class="glass skill" onclick="showSkill('cpp')">C++</div>
+<div class="glass skill" onclick="showSkill('js')">JavaScript</div>
+<div class="glass skill" onclick="showSkill('fullstack')">Full Stack Developer</div>
+<div class="glass skill" onclick="showSkill('frontend')">Frontend Developer</div>
+<div class="glass skill" onclick="showSkill('ai')">AI & ML Engineer</div>
+<div class="glass skill" onclick="showSkill('data')">Data Analytics</div>
+<div class="glass skill" onclick="showSkill('dsa')">Data Structures and Algorithms</div>
+<div class="glass skill" onclick="showSkill('db')">Database Management</div>
+<div class="glass skill" onclick="showSkill('mern')">MERN Stack Developer</div>
 </div>
+<p id="skill-info"></p>
 </section>
 <section id="projects">
 <h2> 🚀 Projects</h2>
@@ -84,11 +89,12 @@ to perform automation tasks through voice commands.
 <section id="contact">
 <div class="glass section-card">
 <h2> 📩 Contact</h2>
-<form action="https://formspree.io/f/xaqpyjow" method="POST">
+<form id="contact-form">
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Your Email" required>
 <textarea name="message" placeholder="Your Message" required></textarea>
 <button type="submit">Send Message</button>
+<p id="form-status"></p>
 </form>
 <div class="socials">
 <a href="https://www.linkedin.com/in/armaan-saad-120251306" target="_blank">
